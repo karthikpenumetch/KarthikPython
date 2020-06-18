@@ -1,0 +1,15 @@
+import turtle
+t = turtle.Pen()
+turtle.bgcolor("black")
+colors = ["red", "yellow", "blue", "green"]
+
+name = turtle.textinput("Enter yout name", "What is your name?")
+
+for x in range(100):
+    t.pencolor(colors[x%4])
+    t.penup()
+    t.forward(x*6)
+    t.pendown()
+    t.write(name, font = ("Times New Roman", int((x + 4)/4), "bold"))
+    t.left(92)
+    t.speed(0)
